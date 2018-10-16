@@ -11,7 +11,7 @@
 .label-yellow { background-color: #f7f5dc; }
 
 input.error, textarea.error{
-  border:2px dashed rgb(255, 136, 0); !important;
+  border:2px dashed rgb(255, 136, 0) !important;
 }
 label.error{
   color:rgb(255, 136, 0); font-weight:800 !important;

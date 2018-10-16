@@ -604,6 +604,11 @@ var runMain = {
                             },
                             birthDate : {
                                 required : true
+                            },
+                            cust_mobile : {
+                                required : true,
+                                minlength : 10,
+                                mobilephone : true
                             }
                         },
 
@@ -620,6 +625,9 @@ var runMain = {
                             },
                             birthDate : {
                                 required : '생년월일을 입력해주세요.'
+                            },
+                            cust_mobile : {
+                                required : '휴대폰번호를 입력해주세요.'
                             }
                         },
 
