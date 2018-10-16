@@ -692,14 +692,19 @@ $(document).ready(function() {
             });
 
             // 달력
-            $("body").on("click","#birthDate",function(e){
-                // console.log('달력');
-                $(this).removeClass("hasDatepicker").datepicker({
-                    dateFormat: 'yymmdd',
-                    prevText: '<i class="fa fa-chevron-left"></i>',
-					nextText: '<i class="fa fa-chevron-right"></i>'
-                });
-            });
+			$("body").on("click", "#birthDate", function(e) {
+				//console.log('달력');
+				$(this).removeClass("hasDatepicker").datepicker({
+					dateFormat: 'yymmdd',
+					prevText: '<i class="fa fa-chevron-left"></i>',
+                    nextText: '<i class="fa fa-chevron-right"></i>',
+                    changeMonth : true,
+                    changeYear : true,
+                    yearRange:"1950:2018",
+                    monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                    showButtonPanel: true
+				});
+			});
 
             // 다음 우편번호
             $("body").on("click","#daumPost",function(e){
@@ -751,6 +756,43 @@ $(document).ready(function() {
                         $("#"+modalObjName).html(""); // 타겟코드 초기화
                         $("#"+modalObjName).html(Data); //타겟 소스 input
 						$("#"+modalObjName+"Label").text(modalTitle); // 팝업 타이틀 Set
+
+                        // Validation
+                        $("#smart-form-register").validate({
+
+                            // Rules for form validation
+                            rules : {
+                                mnger_name : {
+                                    required : true  
+                                }
+                            },
+
+                            // Messages for form validation
+                            messages : {
+                                mnger_name : {
+                                    required : '아이디를 반드시 입력해주세요.'
+                                }
+                            },
+
+                            // Ajax form submition
+                            submitHandler : function(form) {
+                                $(form).ajaxSubmit({
+                                    success : function() {
+                                        $("#smart-form-register").addClass('submited');
+                                    }
+                                });
+                            },
+
+                            // Do not change code below
+                            errorPlacement : function(error, element) {
+                                error.insertAfter(element.after());
+                            }
+
+                            });
+
+                            $('#i-agree').on('click',function(event){
+                                $('#smart-form-register').submit();
+                            });
                     },
                     error: function(XMLHttpRequest, textStatus, errorThrown){
                         alert('Error : ' + errorThrown);
