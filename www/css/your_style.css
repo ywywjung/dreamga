@@ -1,0 +1,74 @@
+/* 공통 : form text-align 가운데 정렬 설정  */
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, 
+.table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th { vertical-align:middle; text-align: center; }
+
+/* 공통 : label */
+.label { color: #000; padding: 5px 10px; font-size: 85%; font-weight: normal; }
+.label-red { background-color: #f2dede; }
+.label-gray { background-color: #e2e2e2; }
+.label-blue { background-color: #d4e7f7; }
+.label-green { background-color: #e1edde; }
+.label-yellow { background-color: #f7f5dc; }
+
+
+
+/* 지사관리 > 지사정보 : inputbox */
+input[type=text].range { 
+    width: 50px; 
+    padding-left: 5px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    border-top: none; 
+}
+
+
+
+/* 예약관리 > 예약정보 : 진행상태 아이콘 설정 */
+.reservlist-group { margin-top: 10px; }
+.reservlist_icon li { 
+    float: left;
+    list-style: none;
+}
+.reservlist_icon .case { padding: 10px; }
+
+
+
+/* 지사관리 > 관리사정보 : 사진영역  */
+.freelancer_photo { padding: 14px 0px !important; }
+
+.smart-form .label { display: block; }
+
+.smart-form .button, .smart-form .checkbox, .smart-form .input, 
+.smart-form .radio, .smart-form .select, .smart-form .textarea, 
+.smart-form .toggle {
+    position: static;
+    display: block;
+}
+
+
+/* 회원관리 > 회원정보 : 등록form */
+.smart-form *, .smart-form :after, .smart-form :before { margin-bottom: 10px; }
+    /* input border color */
+.smart-style-3 input:not([type]), .smart-style-3 input[type=color], 
+.smart-style-3 input[type=email], .smart-style-3 input[type=number], 
+.smart-style-3 input[type=password], .smart-style-3 input[type=tel], 
+.smart-style-3 input[type=text], .smart-style-3 input[type=url], 
+.smart-style-3 textarea[type=text], .smart-style-3 select { 
+    border-top-color: #ccc; 
+    border-left-color: #ccc;
+    box-sizing: border-box;
+    padding: 0 12px;
+}
+label { line-height: 35px; }
+.smart-form section { margin-bottom: 0; }
+
+
+/* 회원관리 > 고객정보 : 등록form */
+.smart-form .checkbox, .smart-form .radio { line-height: 35px; }
+.smart-form .col { padding-right: 0; padding-left: 5px; }
+
+
+/* 지사관리 > 관리사정보 : 관리사사진,건강검진파일form */
+.fileBtn { padding: 6px 12px; }
+
+
