@@ -591,6 +591,18 @@ var runMain = {
 
                         // Rules for form validation
                         rules : {
+                            sort : {
+                                required : true
+                            },
+                            service : {
+                                required : true
+                            },
+                            benefit : {
+                                required : true
+                            },
+                            manager : {
+                                required : true
+                            },
                             cust_name : {
                                 required : true
                             },
@@ -602,7 +614,7 @@ var runMain = {
                                 required : true,
                                 number : true
                             },
-                            birthDate : {
+                            cust_birth_dt : {
                                 required : true
                             },
                             cust_mobile : {
@@ -614,6 +626,19 @@ var runMain = {
 
                         // Messages for form validation
                         messages : {
+
+                            sort : {
+                                required : '지사을 반드시 선택해주세요.'
+                            },
+                            service : {
+                                required : '서비스을 반드시 선택해주세요.'
+                            },
+                            benefit : {
+                                required : '혜택을 반드시 선택해주세요.'
+                            },
+                            manager : {
+                                required : '관리사를 반드시 선택해주세요.'
+                            },                            
                             cust_name : {
                                 required : '이름을 반드시 입력해주세요.'
                             },
@@ -623,7 +648,7 @@ var runMain = {
                             finishDate : {
                                 required : '종료일을 입력해주세요.'
                             },
-                            birthDate : {
+                            cust_birth_dt : {
                                 required : '생년월일을 입력해주세요.'
                             },
                             cust_mobile : {

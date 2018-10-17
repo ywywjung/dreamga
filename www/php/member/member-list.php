@@ -593,6 +593,9 @@ $(document).ready(function() {
 
                             // Rules for form validation
                             rules : {
+                                user_jobgrd : {
+                                    required : true
+                                },
                                 user_id : {
                                     required : true,
                                     minlength : 6,
@@ -626,6 +629,9 @@ $(document).ready(function() {
 
                             // Messages for form validation
                             messages : {
+                                user_jobgrd : {
+                                    required : '회원구분을 선택해주세요.'
+                                },
                                 user_id : {
                                     required : '아이디를 반드시 입력해주세요.',
                                     user_idcheck : '영문자, 숫자 조합을 입력해야합니다.'
