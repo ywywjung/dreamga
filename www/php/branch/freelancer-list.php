@@ -692,7 +692,7 @@ $(document).ready(function() {
             });
 
             // 달력
-			$("body").on("click", "#birthDate", function(e) {
+			$("body").on("click", "#birthDate, #startDate, #endDate", function(e) {
 				//console.log('달력');
 				$(this).removeClass("hasDatepicker").datepicker({
 					dateFormat: 'yymmdd',
@@ -749,6 +749,14 @@ $(document).ready(function() {
                                     required : true,
                                     minlength : 10,
                                     mobilephone : true
+                                },
+                                mnger_ency_dt : {
+                                    required : true,
+                                    number: true
+                                },
+                                mnger_retire_dt : {
+                                    required : true,
+                                    number: true
                                 }
                             },
 
@@ -762,6 +770,12 @@ $(document).ready(function() {
                                 },
                                 mnger_mobile : {
                                     required : '휴대폰번호을 반드시 입력해주세요.'
+                                },
+                                mnger_ency_dt : {
+                                    required : '입사일을 반드시 입력해주세요.'
+                                },
+                                mnger_retire_dt : {
+                                    required : '퇴사일을 반드시 입력해주세요.'
                                 }
                             },
 
