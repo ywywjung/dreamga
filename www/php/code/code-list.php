@@ -82,6 +82,9 @@ include ("../../inc/nav.php");
 								<option value="K001" >미사용</option>
 							</select>
                         </div>
+                        <button type="submit" class="btn btn-primary btn-sm">
+							<i class="glyphicon glyphicon-search"></i> 검색
+						</button>
                         &nbsp;
                         &nbsp;
                     <!-- input box -->
