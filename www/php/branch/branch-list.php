@@ -86,8 +86,11 @@ include ("../../inc/nav.php");
 								<input name="endDate" class="datepicker" id="endDate" type="text" placeholder="종료일" data-dateformat="yymmdd" value="20181031">
 							</label>
 						</div>
-						 -->
-						<button type="submit" class="btn btn-primary btn-sm">
+                         -->
+                         <button type="submit" class="btn btn-primary btn-sm">
+							<i class="glyphicon glyphicon-search"></i> 검색
+						</button>
+						<button type="submit" class="btn btn-default btn-sm">
 							<i class="glyphicon glyphicon-plus"></i> 정렬등록하기
 						</button>
                         <div class="form-group" id="div_mach_cd">
@@ -506,7 +509,7 @@ $(document).ready(function() {
 	/* TABLETOOLS */
 	$('#datatable_tabletools').dataTable({
 
-			// Tabletools options:
+		// Tabletools options:
 		//   https://datatables.net/extensions/tabletools/button_options
 		"sDom":  "<'dt-toolbar'r>"+
                         "t"+
