@@ -103,6 +103,9 @@ include ("../../inc/nav.php");
 								<input name="endDate" class="datepicker" id="endDate" type="text" placeholder="종료일" data-dateformat="yy-mm-dd" value="2018-10-31">
 							</label>
                         </div>
+                        <button type="submit" class="btn btn-primary btn-sm">
+							<i class="glyphicon glyphicon-search"></i> 검색
+						</button>
                         <div class="smart-form form-group pull-right">
 							<h6>( 단위 : 원단위 )</h6>
                         </div>
