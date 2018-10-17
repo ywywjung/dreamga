@@ -115,13 +115,13 @@
 
 						<!-- Note: The activity badge color changes when clicked and resets the number to 0
 						Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
-						<span id="activity" class="activity-dropdown"> <i class="fa fa-user"></i> <b class="badge"> 21 </b> </span>
+						<span id="activity" class="activity-dropdown"> <i class="fa fa-user"></i></span>
 
 						<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
-						<div class="ajax-dropdown">
+						<!-- <div class="ajax-dropdown"> -->
 
 							<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
-							<div class="btn-group btn-group-justified" data-toggle="buttons">
+							<!-- <div class="btn-group btn-group-justified" data-toggle="buttons">
 								<label class="btn btn-default">
 									<input type="radio" name="activity" id="<?php echo APP_URL; ?>/ajax/notify/mail.php">
 									Msgs (14) </label>
@@ -131,10 +131,10 @@
 								<label class="btn btn-default">
 									<input type="radio" name="activity" id="<?php echo APP_URL; ?>/ajax/notify/tasks.php">
 									Tasks (4) </label>
-							</div>
+							</div> -->
 
 							<!-- notification content -->
-							<div class="ajax-notifications custom-scroll">
+							<!-- <div class="ajax-notifications custom-scroll">
 
 								<div class="alert alert-transparent">
 									<h4>Click a button to show messages here</h4>
@@ -143,17 +143,17 @@
 
 								<i class="fa fa-lock fa-4x fa-border"></i>
 
-							</div>
+							</div> -->
 							<!-- end notification content -->
 
 							<!-- footer: refresh area -->
-							<span> Last updated on: 12/12/2013 9:43AM
+							<!-- <span> Last updated on: 12/12/2013 9:43AM
 								<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
 									<i class="fa fa-refresh"></i>
-								</button> </span>
+								</button> </span> -->
 							<!-- end footer -->
 
-						</div>
+						<!-- </div> -->
 						<!-- END AJAX-DROPDOWN -->
 					</div>
 
