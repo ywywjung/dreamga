@@ -89,18 +89,18 @@ include ("../../inc/nav.php");
                         &nbsp;
                         &nbsp;
                         <!-- 캘린더 -->
-                        <div class="smart-form form-group">
+                        <div class="form-group" id="div_mach_cd">
                             <span> 기간&nbsp;</span>
                         </div>
                         <div class="smart-form form-group">
-                            <label> <i class="icon-append fa fa-calendar"></i>
-								<input name="startDate" class="datepicker" id="startDate" type="text" placeholder="시작일" data-dateformat="yy-mm-dd" value="2018-10-01">
+							<label class="input"><i class="icon-append fa fa-calendar"></i>
+								<input name="startDate" class="datepicker form-control" id="startDate" type="text" data-dateformat="yy-mm-dd" value="2018-10-01">
 							</label>
                         </div>
                         &nbsp; - &nbsp;
 						<div class="smart-form form-group">
-							<label> <i class="icon-append fa fa-calendar"></i>
-								<input name="endDate" class="datepicker" id="endDate" type="text" placeholder="종료일" data-dateformat="yy-mm-dd" value="2018-10-31">
+							<label class="input"> <i class="icon-append fa fa-calendar"></i>
+								<input name="endDate" class="datepicker form-control" id="endDate" type="text" data-dateformat="yy-mm-dd" value="2018-10-31">
 							</label>
                         </div>
                         <button type="submit" class="btn btn-primary btn-sm">
