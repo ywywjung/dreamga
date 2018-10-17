@@ -78,13 +78,3 @@ label { line-height: 35px; }
 
 
 
-/* 예약정보,정산관리 캘린더 */
-.smart-style-3 input:not([type]), .smart-style-3 input[type=color], 
-.smart-style-3 input[type=email], .smart-style-3 input[type=number], 
-.smart-style-3 input[type=password], .smart-style-3 input[type=tel], 
-.smart-style-3 input[type=text], .smart-style-3 input[type=url], 
-.smart-style-3 textarea {
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
