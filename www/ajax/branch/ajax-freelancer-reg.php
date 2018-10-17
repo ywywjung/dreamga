@@ -74,21 +74,21 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 입사일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_ency_dt" class="datepicker form-control" id="startDate" placeholder="입사일">
+                                    <input type="text" name="mnger_ency_dt" class="datepicker form-control" id="mnger_ency_dt" placeholder="입사일">
 								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 퇴사일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_retire_dt" class="datepicker form-control" id="endDate" placeholder="퇴사일">
+                                    <input type="text" name="mnger_retire_dt" class="datepicker form-control" id="mnger_retire_dt" placeholder="퇴사일">
 								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">진급일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_lvl_dt" class="datepicker form-control" id="gradeDate" placeholder="생년월일">
+                                    <input type="text" name="mnger_lvl_dt" class="datepicker form-control" id="mnger_lvl_dt" placeholder="생년월일">
 								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label">연회비납부일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_party_exps" class="datepicker form-control" id="expDate">
+                                    <input type="text" name="mnger_party_exps" class="datepicker form-control" id="mnger_party_exps">
 								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
                                 </div>
                             </div>
