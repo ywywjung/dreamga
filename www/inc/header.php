@@ -160,11 +160,11 @@
 					<!-- projects dropdown -->
 					<div class="project-context hidden-xs">
 
-						<span class="label">Projects:</span>
-						<span id="project-selector" class="popover-trigger-element dropdown-toggle" data-toggle="dropdown">Recent projects <i class="fa fa-angle-down"></i></span>
+						<span class="label">2018.10.17</span>
+						<span id="project-selector" class="popover-trigger-element dropdown-toggle" data-toggle="dropdown">드림가 관리자 
 
 						<!-- Suggestion: populate this list with fetch and push technique -->
-						<ul class="dropdown-menu">
+						<!-- <ul class="dropdown-menu">
 							<li>
 								<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
 							</li>
@@ -178,7 +178,7 @@
 							<li>
 								<a href="javascript:void(0);"><i class="fa fa-power-off"></i> Clear</a>
 							</li>
-						</ul>
+						</ul> -->
 						<!-- end dropdown-menu-->
 
 					</div>
