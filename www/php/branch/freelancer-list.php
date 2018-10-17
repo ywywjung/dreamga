@@ -607,20 +607,20 @@ $(document).ready(function() {
 	/* TABLETOOLS */
 	$('#datatable_tabletools').dataTable({
 
+		
 		// Tabletools options:
 		//   https://datatables.net/extensions/tabletools/button_options
-		"sDom":  "<'dt-toolbar'<'col-xs-12 col-sm-6 hidden-xs'f><'col-sm-6 col-xs-12 hidden-xs'<'toolbar'>>r>"+
+		"sDom":  "<'dt-toolbar'r>"+
                         "t"+
                         "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
 
 		"oLanguage": {
-				"sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
+				// "sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
 				"sInfo" : "_START_ ~ _END_  / 전체 : _TOTAL_개",
 				"oPaginate" : {
 					"sNext" : "다음",
 					"sPrevious" : "이전"
 						}
-
 				},		
 		        
 				"autoWidth" : true,
@@ -636,6 +636,7 @@ $(document).ready(function() {
 				"drawCallback" : function(oSettings) {
 					responsiveHelper_datatable_tabletools.respond();
 				}
+
 
 	});
 
@@ -692,19 +693,14 @@ $(document).ready(function() {
             });
 
             // 달력
-			$("body").on("click", "#birthDate, #mnger_ency_dt, #mnger_retire_dt, #mnger_lvl_dt", function(e) {
-				//console.log('달력');
-				$(this).removeClass("hasDatepicker").datepicker({
-					dateFormat: 'yymmdd',
-					prevText: '<i class="fa fa-chevron-left"></i>',
-                    nextText: '<i class="fa fa-chevron-right"></i>',
-                    changeMonth : true,
-                    changeYear : true,
-                    yearRange:"1950:2018",
-                    monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-                    showButtonPanel: true
-				});
-			});
+            $("body").on("click","#birthDate",function(e){
+                // console.log('달력');
+                $(this).removeClass("hasDatepicker").datepicker({
+                    dateFormat: 'yymmdd',
+                    prevText: '<i class="fa fa-chevron-left"></i>',
+					nextText: '<i class="fa fa-chevron-right"></i>'
+                });
+            });
 
             // 다음 우편번호
             $("body").on("click","#daumPost",function(e){
@@ -732,71 +728,6 @@ $(document).ready(function() {
                         $("#"+modalObjName).html(""); // 타겟코드 초기화
                         $("#"+modalObjName).html(Data); //타겟 소스 input
 						$("#"+modalObjName+"Label").text(modalTitle); // 팝업 타이틀 Set
-
-                        
-                        // Validation
-                        $("#smart-form-register").validate({
-
-                            // Rules for form validation
-                            rules : {
-                                mnger_name : {
-                                    required : true  
-                                },
-                                mnger_birth_dt : {
-                                    required : true
-                                },
-                                mnger_mobile : {
-                                    required : true,
-                                    minlength : 10,
-                                    mobilephone : true
-                                },
-                                mnger_ency_dt : {
-                                    required : true,
-                                    number: true
-                                },
-                                mnger_retire_dt : {
-                                    required : true,
-                                    number: true
-                                }
-                            },
-
-                            // Messages for form validation
-                            messages : {
-                                mnger_name : {
-                                    required : '아이디를 반드시 입력해주세요.'
-                                },
-                                mnger_birth_dt : {
-                                    required : '생년월일을 반드시 입력해주세요.'
-                                },
-                                mnger_mobile : {
-                                    required : '휴대폰번호을 반드시 입력해주세요.'
-                                },
-                                mnger_ency_dt : {
-                                    required : '입사일을 반드시 입력해주세요.'
-                                },
-                                mnger_retire_dt : {
-                                    required : '퇴사일을 반드시 입력해주세요.'
-                                }
-                            },
-
-                            // Ajax form submition
-                            submitHandler : function(form) {
-                                $(form).ajaxSubmit({
-                                    success : function() {
-                                        $("#smart-form-register").addClass('submited');
-                                    }
-                                });
-                            },
-
-                            // Do not change code below
-                            errorPlacement : function(error, element) {
-                                error.insertAfter(element.after());
-                            }
-                        });
-
-                        $('#i-agree').on('click',function(event){
-                            $('#smart-form-register').submit();
-                        });
                     },
                     error: function(XMLHttpRequest, textStatus, errorThrown){
                         alert('Error : ' + errorThrown);
@@ -821,7 +752,6 @@ $(document).ready(function() {
                         $("#"+modalObjName).html(""); // 타겟코드 초기화
                         $("#"+modalObjName).html(Data); //타겟 소스 input
 						$("#"+modalObjName+"Label").text(modalTitle); // 팝업 타이틀 Set
-
                     },
                     error: function(XMLHttpRequest, textStatus, errorThrown){
                         alert('Error : ' + errorThrown);
