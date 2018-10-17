@@ -692,7 +692,7 @@ $(document).ready(function() {
             });
 
             // 달력
-			$("body").on("click", "#birthDate, #startDate, #endDate", function(e) {
+			$("body").on("click", "#birthDate, #mnger_ency_dt, #mnger_retire_dt, #mnger_lvl_dt", function(e) {
 				//console.log('달력');
 				$(this).removeClass("hasDatepicker").datepicker({
 					dateFormat: 'yymmdd',
