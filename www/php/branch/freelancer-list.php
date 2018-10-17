@@ -732,6 +732,57 @@ $(document).ready(function() {
                         $("#"+modalObjName).html(""); // 타겟코드 초기화
                         $("#"+modalObjName).html(Data); //타겟 소스 input
 						$("#"+modalObjName+"Label").text(modalTitle); // 팝업 타이틀 Set
+
+                        
+                        // Validation
+                        $("#smart-form-register").validate({
+
+                            // Rules for form validation
+                            rules : {
+                                mnger_name : {
+                                    required : true  
+                                },
+                                mnger_birth_dt : {
+                                    required : true
+                                },
+                                mnger_mobile : {
+                                    required : true,
+                                    minlength : 10,
+                                    mobilephone : true
+                                }
+                            },
+
+                            // Messages for form validation
+                            messages : {
+                                mnger_name : {
+                                    required : '아이디를 반드시 입력해주세요.'
+                                },
+                                mnger_birth_dt : {
+                                    required : '생년월일을 반드시 입력해주세요.'
+                                },
+                                mnger_mobile : {
+                                    required : '휴대폰번호을 반드시 입력해주세요.'
+                                }
+                            },
+
+                            // Ajax form submition
+                            submitHandler : function(form) {
+                                $(form).ajaxSubmit({
+                                    success : function() {
+                                        $("#smart-form-register").addClass('submited');
+                                    }
+                                });
+                            },
+
+                            // Do not change code below
+                            errorPlacement : function(error, element) {
+                                error.insertAfter(element.after());
+                            }
+                        });
+
+                        $('#i-agree').on('click',function(event){
+                            $('#smart-form-register').submit();
+                        });
                     },
                     error: function(XMLHttpRequest, textStatus, errorThrown){
                         alert('Error : ' + errorThrown);
@@ -757,42 +808,6 @@ $(document).ready(function() {
                         $("#"+modalObjName).html(Data); //타겟 소스 input
 						$("#"+modalObjName+"Label").text(modalTitle); // 팝업 타이틀 Set
 
-                        // Validation
-                        $("#smart-form-register").validate({
-
-                            // Rules for form validation
-                            rules : {
-                                mnger_name : {
-                                    required : true  
-                                }
-                            },
-
-                            // Messages for form validation
-                            messages : {
-                                mnger_name : {
-                                    required : '아이디를 반드시 입력해주세요.'
-                                }
-                            },
-
-                            // Ajax form submition
-                            submitHandler : function(form) {
-                                $(form).ajaxSubmit({
-                                    success : function() {
-                                        $("#smart-form-register").addClass('submited');
-                                    }
-                                });
-                            },
-
-                            // Do not change code below
-                            errorPlacement : function(error, element) {
-                                error.insertAfter(element.after());
-                            }
-
-                            });
-
-                            $('#i-agree').on('click',function(event){
-                                $('#smart-form-register').submit();
-                            });
                     },
                     error: function(XMLHttpRequest, textStatus, errorThrown){
                         alert('Error : ' + errorThrown);
