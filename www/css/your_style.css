@@ -14,7 +14,7 @@ input.error, textarea.error{
     border:2px dashed rgb(255, 136, 0) !important;
   }
   label.error{
-    color:rgb(255, 136, 0); font-weight:800 !important;
+    color:rgb(255, 136, 0); font-weight:600 !important;
   }
 
 /* 지사관리 > 지사정보 : inputbox */
