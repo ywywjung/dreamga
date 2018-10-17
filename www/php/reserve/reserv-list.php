@@ -103,11 +103,12 @@ include ("../../inc/nav.php");
 								<input name="endDate" class="datepicker" id="endDate" type="text" placeholder="종료일" data-dateformat="yy-mm-dd" value="2018-10-31">
 							</label>
                         </div>
+                        <button type="submit" class="btn btn-primary btn-sm">
+							<i class="glyphicon glyphicon-search"></i> 검색
+						</button>
                         <br>
                         <!-- 예약상황 -->
-                        <div class="form-group" id="div_mach_cd">
-                            <i class="fa fa-chevron-right padding-5"></i><span>예약건수 :&nbsp;200건</span>
-                        </div>
+                        
                         <div class="form-group reservlist-group" id="div_mach_cd">
                             <ul class="reservlist_icon">
                                 <li><span class="label label-gray">&nbsp;&nbsp;접수&nbsp;&nbsp;100건</span></li>
@@ -115,6 +116,9 @@ include ("../../inc/nav.php");
                                 <li><span class="label label-blue">&nbsp;&nbsp;완료&nbsp;&nbsp;100건</span></li>
                                 <li><span class="label label-red">&nbsp;&nbsp;취소&nbsp;&nbsp;100건</span></li>
                             </ul>
+                        </div>
+                        <div class="form-group" id="div_mach_cd">
+                            <i class="fa fa-chevron-right padding-5"></i><span>예약건수 :&nbsp;200건</span>
                         </div>
                         <!-- 버튼 -->
                         <button type="button" class="btn btn-danger btn-sm pull-right" id="reservRegBtn" data-toggle="modal" data-target="#reservRegModal" data-mode="4243" data-title="예약정보 등록" data-code="8">
