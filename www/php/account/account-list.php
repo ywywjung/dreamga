@@ -89,23 +89,20 @@ include ("../../inc/nav.php");
                         &nbsp;
                         &nbsp;
                         <!-- 캘린더 -->
-                        <div class="form-group" id="div_mach_cd">
+                        <div class="smart-form form-group">
                             <span> 기간&nbsp;</span>
                         </div>
                         <div class="smart-form form-group">
-							<label class="input"><i class="icon-append fa fa-calendar"></i>
-								<input name="startDate" class="datepicker form-control" id="startDate" type="text" data-dateformat="yy-mm-dd" value="2018-10-01">
+                            <label class="input"><i class="icon-append fa fa-calendar"></i>
+								<input name="startDate" class="datepicker" id="startDate" type="text" placeholder="시작일" data-dateformat="yy-mm-dd" value="2018-10-01">
 							</label>
                         </div>
                         &nbsp; - &nbsp;
 						<div class="smart-form form-group">
 							<label class="input"> <i class="icon-append fa fa-calendar"></i>
-								<input name="endDate" class="datepicker form-control" id="endDate" type="text" data-dateformat="yy-mm-dd" value="2018-10-31">
+								<input name="endDate" class="datepicker" id="endDate" type="text" placeholder="종료일" data-dateformat="yy-mm-dd" value="2018-10-31">
 							</label>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-sm">
-							<i class="glyphicon glyphicon-search"></i> 검색
-						</button>
                         <div class="smart-form form-group pull-right">
 							<h6>( 단위 : 원단위 )</h6>
                         </div>
@@ -483,19 +480,20 @@ $(document).ready(function() {
 	/* TABLETOOLS */
 	$('#datatable_tabletools').dataTable({
 
-		//  Tabletools options:
-		//  https://datatables.net/extensions/tabletools/button_options
-		"sDom":  "<'dt-toolbar'r>"+
+		// Tabletools options:
+		//   https://datatables.net/extensions/tabletools/button_options
+		"sDom":  "<'dt-toolbar'<'col-xs-12 col-sm-6 hidden-xs'f><'col-sm-6 col-xs-12 hidden-xs'<'toolbar'>>r>"+
                         "t"+
                         "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
 
 		"oLanguage": {
-				// "sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
+				"sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
 				"sInfo" : "_START_ ~ _END_  / 전체 : _TOTAL_개",
 				"oPaginate" : {
 					"sNext" : "다음",
 					"sPrevious" : "이전"
 						}
+
 				},		
 		        
 				"autoWidth" : true,
@@ -511,6 +509,7 @@ $(document).ready(function() {
 				"drawCallback" : function(oSettings) {
 					responsiveHelper_datatable_tabletools.respond();
 				}
+
 	});
 
 	/* END TABLETOOLS */

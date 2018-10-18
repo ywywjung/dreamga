@@ -110,10 +110,7 @@
 					<div id="logo-group">
 
 						<!-- PLACE YOUR LOGO HERE -->
-                        <span id="logo"> 
-                            <!-- <img src="<?php echo ASSETS_URL; ?>/img/logo.png" alt="SmartAdmin"> -->
-                            드림가
-                        </span>
+						<span id="logo"> <img src="<?php echo ASSETS_URL; ?>/img/logo.png" alt="SmartAdmin"> </span>
 						<!-- END LOGO PLACEHOLDER -->
 
 						<!-- Note: The activity badge color changes when clicked and resets the number to 0
@@ -163,11 +160,11 @@
 					<!-- projects dropdown -->
 					<div class="project-context hidden-xs">
 
-						<span class="label">2018.10.17</span>
-						<span id="project-selector" class="popover-trigger-element dropdown-toggle" data-toggle="dropdown">드림가 관리자 
+						<span class="label">Projects:</span>
+						<span id="project-selector" class="popover-trigger-element dropdown-toggle" data-toggle="dropdown">Recent projects <i class="fa fa-angle-down"></i></span>
 
 						<!-- Suggestion: populate this list with fetch and push technique -->
-						<!-- <ul class="dropdown-menu">
+						<ul class="dropdown-menu">
 							<li>
 								<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
 							</li>
@@ -181,7 +178,7 @@
 							<li>
 								<a href="javascript:void(0);"><i class="fa fa-power-off"></i> Clear</a>
 							</li>
-						</ul> -->
+						</ul>
 						<!-- end dropdown-menu-->
 
 					</div>
