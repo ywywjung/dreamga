@@ -141,11 +141,11 @@
                                 <div class="col-md-8 inline-group">
                                     <label class="radio">
                                         <input type="radio" name="mnger_bac_insr" class="radiobox">
-                                        <span>초산</span>
+                                        <span>가입</span>
                                     </label>
                                     <label class="radio">
                                         <input type="radio" name="mnger_bac_insr" class="radiobox">
-                                        <span>경산</span>
+                                        <span>미가입</span>
                                     </label>
                                 </div>
                             </div>
@@ -154,11 +154,11 @@
                                 <div class="col-md-8 inline-group">
                                     <label class="radio">
                                         <input type="radio" name="mnger_res_insr" class="radiobox">
-                                        <span>초산</span>
+                                        <span>가입</span>
                                     </label>
                                     <label class="radio">
                                         <input type="radio" name="mnger_res_insr" class="radiobox">
-                                        <span>경산</span>
+                                        <span>미가입</span>
                                     </label>
                                 </div>
                             </div>
