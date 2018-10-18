@@ -588,6 +588,56 @@ $(document).ready(function() {
                         $("#"+modalObjName).html(Data); //타겟 소스 input
 						$("#"+modalObjName+"Label").text(modalTitle); // 팝업 타이틀 Set
 						
+                        // Validation
+                        $("#smart-form-register").validate({
+
+                        // Rules for form validation
+                        rules : {
+                            jisa_area_nm : {
+                                required : true   
+                            },
+                            jisa_repf : {
+                                required : true   
+                            },
+                            jisa_mobile : {
+                                required : true,
+                                minlength : 10,
+                                mobilephone : true
+                            }    
+                        },
+
+                        // Messages for form validation
+                        messages : {
+                            jisa_area_nm : {
+                                required : '지사명을 반드시 입력해주세요.'
+                            },
+                            jisa_repf : {
+                                required : '대표자명을 반드시 입력해주세요.'
+                            },
+                            jisa_mobile : {
+                                required : '휴대번호를 입력해주세요.'
+                            }
+                        },
+
+                        // Ajax form submition
+                        submitHandler : function(form) {
+                            $(form).ajaxSubmit({
+                                success : function() {
+                                    $("#smart-form-register").addClass('submited');
+                                }
+                            });
+                        },
+
+                        // Do not change code below
+                        errorPlacement : function(error, element) {
+                            error.insertAfter(element.after());
+                        }
+
+                        });
+
+                        $('#i-agree').on('click',function(event){
+                            $('#smart-form-register').submit();
+                        }); 
                     },
                     error: function(XMLHttpRequest, textStatus, errorThrown){
                         alert('Error : ' + errorThrown);
