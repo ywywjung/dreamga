@@ -528,19 +528,24 @@ $(document).ready(function() {
                 runMain.fn.memberRegIssue(modalObjName,modalTitle,mode,code);
             });
 			
-			//달력
+			// 달력
 			$("body").on("click", "#birthDate", function(e) {
-				// console.log('달력');
+				//console.log('달력');
 				$(this).removeClass("hasDatepicker").datepicker({
 					dateFormat: 'yymmdd',
 					prevText: '<i class="fa fa-chevron-left"></i>',
-					nextText: '<i class="fa fa-chevron-right"></i>'
+                    nextText: '<i class="fa fa-chevron-right"></i>',
+                    changeMonth : true,
+                    changeYear : true,
+                    yearRange:"1950:2018",
+                    monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                    showButtonPanel: true
 				});
 			});
 
-            //우편번호
+            // 우편번호
 			$("body").on("click", "#daumPost", function(e) {
-				// console.log('우편번호');
+				console.log('우편번호');
 				execDaumPostcode();
 			});
 
@@ -560,23 +565,126 @@ $(document).ready(function() {
                     cache: false,
                     success: function(Data){
                         //console.log(Data);return false;
-
                         $("#"+modalObjName).html(""); //타겟 코드 초기화
                         $("#"+modalObjName).html(Data); //타겟 소스 input
 						$("#"+modalObjName+"Label").text(modalTitle); // 팝업 타이틀 Set
-						
+
+                        // 아이디중복검사
+                        $("#ovlpChk").click(function() {
+                            console.log('data ajax로 유효성 체크');
+                        });
+                        
+                        //$("#smart-form-register").submit();
+                        $.validator.addMethod(
+                            'mobilephone', function (value, element) {
+                                return (value.substring(0, 1) == 0) ? true : false;
+                            }, '휴대전화 번호는 0 으로 시작하여야 합니다.'
+                        );
+                        
+                        $.validator.addMethod(
+                            'user_idcheck', function (value, element) {
+                                return this.optional(element) || /^.*(?=.*\d)(?=.*[a-zA-Z]).*$/.test(value);
+                            }, 
+                        );
+
+                        // Validation
+                        $("#smart-form-register").validate({
+
+                            // Rules for form validation
+                            rules : {
+                                user_jobgrd : {
+                                    required : true
+                                },
+                                user_id : {
+                                    required : true,
+                                    minlength : 6,
+                                    user_idcheck : true    
+                                },
+                                user_pwd : {
+                                    required : true,
+                                    minlength : 6,
+                                    user_idcheck : true
+                                },
+                                userPwChk : {
+                                    required : true,
+                                    minlength : 6,
+                                    equalTo : "name[user_pwd]"
+                                },
+                                user_name : {
+                                    required : true
+                                },
+                                user_birth_dt : {
+                                    required : true
+                                },
+                                user_mobile : {
+                                    required : true,
+                                    minlength : 10,
+                                    mobilephone : true
+                                },
+                                user_jonn_St : {
+                                    required : true
+                                }
+                            },
+
+                            // Messages for form validation
+                            messages : {
+                                user_jobgrd : {
+                                    required : '회원구분을 선택해주세요.'
+                                },
+                                user_id : {
+                                    required : '아이디를 반드시 입력해주세요.',
+                                    user_idcheck : '영문자, 숫자 조합을 입력해야합니다.'
+                                },
+                                user_pwd : {
+                                    required : '비밀번호를 반드시 입력해주세요.',
+                                    user_idcheck : '영문자, 숫자 조합을 입력해야합니다.'
+                                },
+                                userPwChk : {
+                                    required : '입력한 비밀번호를 다시 확인해주세요.'   
+                                },
+                                user_name : {
+                                    required : '이름을 반드시 입력해주세요.'   
+                                },
+                                user_birth_dt : {
+                                    required : '생년월일을 반드시 입력해주세요.',
+                                    number: true  
+                                },
+                                user_mobile : {
+                                    required : '휴대번호를 입력해주세요.'
+                                },
+                                user_jonn_St : {
+                                    required : true
+                                }
+                            },
+
+                            // Ajax form submition
+                            submitHandler : function(form) {
+                                $(form).ajaxSubmit({
+                                    success : function() {
+                                        $("#smart-form-register").addClass('submited');
+                                    }
+                                });
+                            },
+
+                            // Do not change code below
+                            errorPlacement : function(error, element) {
+                                error.insertAfter(element.after());
+                            }
+
+                        });
+
+                        $('#i-agree').on('click',function(event){
+                            $('#smart-form-register').submit();
+                        });
                     },
                     error: function(XMLHttpRequest, textStatus, errorThrown){
                         alert('Error : ' + errorThrown);
                     }
                 });
-            },
-           
-		} 
-    };
+            }
+        } 
+    }
 	runMain.init();
-    
-    
 });
 
 </script>
