@@ -30,11 +30,11 @@ input[type=text].range {
 
 /* 예약관리 > 예약정보 : 진행상태 아이콘 설정 */
 .reservlist-group { margin-top: 10px; }
-.reservlist_icon li { 
+.reservlist_label li { 
     float: left;
     list-style: none;
 }
-.reservlist_icon .case { padding: 10px; }
+.reservlist_label .case { padding: 10px; }
 
 
 
