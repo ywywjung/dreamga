@@ -547,7 +547,7 @@ $(document).ready(function() {
                 console.log("modalObjName=",modalObjName);
                 console.log("mode=",mode);
                 console.log("code=",code);
-                runMain.fn.freelancer(modalTitle,modalObjName,mode,code);
+                runMain.fn.freelancer(modalObjName,modalTitle,mode,code);
             });
             // 고객정보보기
             $("body").on("click",".customBtn",function(e){
@@ -559,7 +559,7 @@ $(document).ready(function() {
                 console.log("modalObjName=",modalObjName);
                 console.log("mode=",mode);
                 console.log("code=",code);
-                runMain.fn.custom(modalTitle,modalObjName,mode,code);
+                runMain.fn.custom(modalObjName,modalTitle,mode,code);
             });
 	
 			//달력
