@@ -144,6 +144,17 @@ include ("../../inc/nav.php");
                            <!-- widget content -->
                            <div class="widget-body no-padding">
                               <table id="datatable_tabletools" class="table table-striped table-bordered table-hover" width="100%">
+                                <?
+                                    $queryA = "SELECT * FROM DRM_USER";
+                                    $resultA = mysql_query($queryA);
+                                    $i = 0;
+                                    $list = array();
+                                    while($rs=mysql_fetch_array($resultA)) {
+                                        $list[$i] = $rs;
+                                        $i++;
+                                    }
+                                    print_pre($list);       
+                                 ?>
                                  <thead>
                                     <tr>
                                        <th data-hide="phone">NO</th>
