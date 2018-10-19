@@ -691,7 +691,6 @@ $(document).ready(function() {
                 runMain.fn.freelancerHealthReg(modalTitle,modalObjName,mode,code);
             });
 
-            // 달력
 			$("body").on("click", "#birthDate, #mnger_ency_dt, #mnger_retire_dt, #mnger_lvl_dt", function(e) {
 				//console.log('달력');
 				$(this).removeClass("hasDatepicker").datepicker({
@@ -709,7 +708,7 @@ $(document).ready(function() {
             // 다음 우편번호
             $("body").on("click","#daumPost",function(e){
                 // console.log('우편번호');
-				execDaumPostcode();
+				        execDaumPostcode();
             });
         },
 

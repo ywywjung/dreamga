@@ -4,7 +4,7 @@
             <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                 &times;
             </button> -->
-            <h4 class="modal-title" id="freelancerRegModalLabel">관리사정보 등록</h4>
+            <h4 class="modal-title" id="reservRegModalLabel">고객정보 보기</h4>
         </div>
         <div class="modal-body custom-scroll terms-body">
             <!-- row -->
@@ -74,21 +74,21 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 입사일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_ency_dt" class="datepicker form-control" id="mnger_ency_dt" placeholder="입사일">
+                                    <input type="text" name="mnger_ency_dt" class="datepicker form-control" id="birthDate" placeholder="입사일">
 								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 퇴사일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_retire_dt" class="datepicker form-control" id="mnger_retire_dt" placeholder="퇴사일">
+                                    <input type="text" name="mnger_retire_dt" class="datepicker form-control" id="birthDate" placeholder="퇴사일">
 								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">진급일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_lvl_dt" class="datepicker form-control" id="mnger_lvl_dt" placeholder="생년월일">
+                                    <input type="text" name="mnger_lvl_dt" class="datepicker form-control" id="birthDate" placeholder="생년월일">
 								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label">연회비납부일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_party_exps" class="datepicker form-control" id="mnger_party_exps">
+                                    <input type="text" name="mnger_party_exps" class="datepicker form-control" id="birthDate">
 								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
                                 </div>
                             </div>

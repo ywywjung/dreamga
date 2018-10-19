@@ -555,17 +555,17 @@ $(document).ready(function() {
             // 회원정보 등록신청
             $("body").on("click","#branchRegBtn,.branchModiBtn",function(e){
                 var modalTitle = $(this).attr("data-title"); //모달팝 제목
-				var modalObjName = $(this).attr("data-target").replace("#",""); //모달팝 오브젝트명
-				var mode = $(this).attr("data-mode");
+				        var modalObjName = $(this).attr("data-target").replace("#",""); //모달팝 오브젝트명
+				        var mode = $(this).attr("data-mode");
                 var code = $(this).attr("data-code");
                 console.log("modalTitle=",modalTitle);
-   			    console.log("modalObjName=",modalObjName);
-				console.log("mode=",mode);
-   			    console.log("code=",code);
+   			        console.log("modalObjName=",modalObjName);
+				        console.log("mode=",mode);
+   			        console.log("code=",code);
                 runMain.fn.branchRegIssue(modalObjName,modalTitle,mode,code);
             });
 			
-		},
+		    },
         // 페이지 사용자 함수
         fn : {
             // 회원정보 등록/수정
@@ -584,8 +584,7 @@ $(document).ready(function() {
 
                         $("#"+modalObjName).html(""); //타겟 코드 초기화
                         $("#"+modalObjName).html(Data); //타겟 소스 input
-						$("#"+modalObjName+"Label").text(modalTitle); // 팝업 타이틀 Set
-						
+            						$("#"+modalObjName+"Label").text(modalTitle); // 팝업 타이틀 Set
                         //$("#smart-form-register").submit();
                         $.validator.addMethod(
                             'mobilephone', function (value, element) {
@@ -602,53 +601,51 @@ $(document).ready(function() {
                         // Validation
                         $("#smart-form-register").validate({
 
-                            // Rules for form validation
-                            rules : {
-                                jisa_area_nm : {
-                                    required : true   
-                                },
-                                jisa_repf : {
-                                    required : true   
-                                },
-                                jisa_mobile : {
-                                    required : true,
-                                    minlength : 10,
-                                    mobilephone : true
-                                }    
-                            },
+                              // Rules for form validation
+                              rules : {
+                                  jisa_area_nm : {
+                                      required : true   
+                                  },
+                                  jisa_repf : {
+                                      required : true   
+                                  },
+                                  jisa_mobile : {
+                                      required : true,
+                                      minlength : 10,
+                                      mobilephone : true
+                                  }    
+                              },
+                              // Messages for form validation
+                              messages : {
+                                  jisa_area_nm : {
+                                      required : '지사명을 반드시 입력해주세요.'
+                                  },
+                                  jisa_repf : {
+                                      required : '대표자명을 반드시 입력해주세요.'
+                                  },
+                                  jisa_mobile : {
+                                      required : '휴대번호를 입력해주세요.'
+                                  }
+                              },
 
-                            // Messages for form validation
-                            messages : {
-                                jisa_area_nm : {
-                                    required : '지사명을 반드시 입력해주세요.'
-                                },
-                                jisa_repf : {
-                                    required : '대표자명을 반드시 입력해주세요.'
-                                },
-                                jisa_mobile : {
-                                    required : '휴대번호를 입력해주세요.'
-                                }
-                            },
+                              // Ajax form submition
+                              submitHandler : function(form) {
+                                  $(form).ajaxSubmit({
+                                      success : function() {
+                                          $("#smart-form-register").addClass('submited');
+                                      }
+                                  });
+                              },
+                              // Do not change code below
+                              errorPlacement : function(error, element) {
+                                  error.insertAfter(element.after());
+                              }
+                          });
 
-                            // Ajax form submition
-                            submitHandler : function(form) {
-                                $(form).ajaxSubmit({
-                                    success : function() {
-                                        $("#smart-form-register").addClass('submited');
-                                    }
-                                });
-                            },
-
-                            // Do not change code below
-                            errorPlacement : function(error, element) {
-                                error.insertAfter(element.after());
-                            }
-
-                        });
-
-                        $('#i-agree').on('click',function(event){
-                            $('#smart-form-register').submit();
-                        });
+                          $('#i-agree').on('click',function(event){
+                              $('#smart-form-register').submit();
+                          });
+                        }); 
                     },
                     error: function(XMLHttpRequest, textStatus, errorThrown){
                         alert('Error : ' + errorThrown);
