@@ -473,12 +473,12 @@ $(document).ready(function() {
 
 		// Tabletools options:
 		//   https://datatables.net/extensions/tabletools/button_options
-		"sDom":  "<'dt-toolbar'<'col-xs-12 col-sm-6 hidden-xs'f><'col-sm-6 col-xs-12 hidden-xs'<'toolbar'>>r>"+
+		"sDom":  "<'dt-toolbar'>"+
                         "t"+
                         "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
 
 		"oLanguage": {
-				"sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
+				// "sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
 				"sInfo" : "_START_ ~ _END_  / 전체 : _TOTAL_개",
 				"oPaginate" : {
 					"sNext" : "다음",
