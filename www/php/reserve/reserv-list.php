@@ -192,13 +192,8 @@ include ("../../inc/nav.php");
                                             <td>1</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -210,13 +205,8 @@ include ("../../inc/nav.php");
                                             <td>2</td>
                                             <td>대전</td>
                                             <td><span class="label label-blue">베이비시터</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -228,13 +218,8 @@ include ("../../inc/nav.php");
                                             <td>3</td>
                                             <td>양천</td>
                                             <td><span class="label label-green">&nbsp;&nbsp;출장반찬&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -246,13 +231,8 @@ include ("../../inc/nav.php");
                                             <td>4</td>
                                             <td>양천</td>
                                             <td><span class="label label-gray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기&nbsp;타&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -264,13 +244,8 @@ include ("../../inc/nav.php");
                                             <td>5</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -282,13 +257,8 @@ include ("../../inc/nav.php");
                                             <td>6</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -300,13 +270,8 @@ include ("../../inc/nav.php");
                                             <td>7</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -318,13 +283,8 @@ include ("../../inc/nav.php");
                                             <td>8</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -336,13 +296,8 @@ include ("../../inc/nav.php");
                                             <td>9</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -354,13 +309,8 @@ include ("../../inc/nav.php");
                                             <td>10</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -372,13 +322,8 @@ include ("../../inc/nav.php");
                                             <td>11</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -390,13 +335,8 @@ include ("../../inc/nav.php");
                                             <td>12</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -408,13 +348,8 @@ include ("../../inc/nav.php");
                                             <td>13</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -426,13 +361,8 @@ include ("../../inc/nav.php");
                                             <td>14</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -444,13 +374,8 @@ include ("../../inc/nav.php");
                                             <td>15</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
@@ -462,13 +387,8 @@ include ("../../inc/nav.php");
                                             <td>16</td>
                                             <td>양천</td>
                                             <td><span class="label label-red">&nbsp;&nbsp;산후조리&nbsp;&nbsp;</span></td>
-
-                                            <td><a href="">관리사</a></td>
-                                            <td><a href="">황혜미 외 1건</a></td>
-
                                             <td><a href="javascript:void(0);"><span class="freelancerBtn" data-title="관리사정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">관리사</span></a></td>
                                             <td><a href="javascript:void(0);"><span class="customBtn" data-title="고객정보보기" data-mode="edit" data-code="" data-toggle="modal" data-target="#reservRegModal">황혜미 외 1건</span></a></td>
-
                                             <td>2000.11.05</td>
                                             <td>2000.11.05</td>
                                             <td>850,000</td>
