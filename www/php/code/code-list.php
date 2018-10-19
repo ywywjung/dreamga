@@ -82,9 +82,6 @@ include ("../../inc/nav.php");
 								<option value="K001" >미사용</option>
 							</select>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-sm">
-							<i class="glyphicon glyphicon-search"></i> 검색
-						</button>
                         &nbsp;
                         &nbsp;
                     <!-- input box -->
@@ -406,7 +403,13 @@ include ("../../inc/scripts.php");
 <script src="<?php echo ASSETS_URL; ?>/js/plugin/datatables/dataTables.bootstrap.min.js"></script>
 <script src="<?php echo ASSETS_URL; ?>/js/plugin/datatable-responsive/datatables.responsive.min.js"></script>
 
-
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
 
 <script type="text/javascript">
 
@@ -449,19 +452,20 @@ $(document).ready(function() {
 	/* TABLETOOLS */
 	$('#datatable_tabletools').dataTable({
 
-		//  Tabletools options:
-		//  https://datatables.net/extensions/tabletools/button_options
-		"sDom":  "<'dt-toolbar'r>"+
+		// Tabletools options:
+		//   https://datatables.net/extensions/tabletools/button_options
+		"sDom":  "<'dt-toolbar'<'col-xs-12 col-sm-6 hidden-xs'f><'col-sm-6 col-xs-12 hidden-xs'<'toolbar'>>r>"+
                         "t"+
                         "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
 
 		"oLanguage": {
-				// "sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
+				"sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
 				"sInfo" : "_START_ ~ _END_  / 전체 : _TOTAL_개",
 				"oPaginate" : {
 					"sNext" : "다음",
 					"sPrevious" : "이전"
 						}
+
 				},		
 		        
 				"autoWidth" : true,

@@ -94,9 +94,6 @@ include ("../../inc/nav.php");
 								<option value="K001" >퇴사</option>
 							  </select>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-sm">
-							<i class="glyphicon glyphicon-search"></i> 검색
-						</button>
                         <div class="form-group" id="div_mach_cd">
                             <i class="fa fa-chevron-right padding-5"></i><span>관리사수 :&nbsp;200명</span>
                         </div>
@@ -610,20 +607,20 @@ $(document).ready(function() {
 	/* TABLETOOLS */
 	$('#datatable_tabletools').dataTable({
 
-		
 		// Tabletools options:
 		//   https://datatables.net/extensions/tabletools/button_options
-		"sDom":  "<'dt-toolbar'r>"+
+		"sDom":  "<'dt-toolbar'<'col-xs-12 col-sm-6 hidden-xs'f><'col-sm-6 col-xs-12 hidden-xs'<'toolbar'>>r>"+
                         "t"+
                         "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
 
 		"oLanguage": {
-				// "sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
+				"sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
 				"sInfo" : "_START_ ~ _END_  / 전체 : _TOTAL_개",
 				"oPaginate" : {
 					"sNext" : "다음",
 					"sPrevious" : "이전"
 						}
+
 				},		
 		        
 				"autoWidth" : true,
@@ -639,7 +636,6 @@ $(document).ready(function() {
 				"drawCallback" : function(oSettings) {
 					responsiveHelper_datatable_tabletools.respond();
 				}
-
 
 	});
 
@@ -695,7 +691,6 @@ $(document).ready(function() {
                 runMain.fn.freelancerHealthReg(modalTitle,modalObjName,mode,code);
             });
 
-             // 달력
 			$("body").on("click", "#birthDate, #mnger_ency_dt, #mnger_retire_dt, #mnger_lvl_dt", function(e) {
 				//console.log('달력');
 				$(this).removeClass("hasDatepicker").datepicker({
@@ -713,7 +708,7 @@ $(document).ready(function() {
             // 다음 우편번호
             $("body").on("click","#daumPost",function(e){
                 // console.log('우편번호');
-				execDaumPostcode();
+				        execDaumPostcode();
             });
         },
 
@@ -825,6 +820,7 @@ $(document).ready(function() {
                         $("#"+modalObjName).html(""); // 타겟코드 초기화
                         $("#"+modalObjName).html(Data); //타겟 소스 input
 						$("#"+modalObjName+"Label").text(modalTitle); // 팝업 타이틀 Set
+
                     },
                     error: function(XMLHttpRequest, textStatus, errorThrown){
                         alert('Error : ' + errorThrown);
