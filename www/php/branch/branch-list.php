@@ -645,7 +645,6 @@ $(document).ready(function() {
                           $('#i-agree').on('click',function(event){
                               $('#smart-form-register').submit();
                           });
-                        }); 
                     },
                     error: function(XMLHttpRequest, textStatus, errorThrown){
                         alert('Error : ' + errorThrown);
