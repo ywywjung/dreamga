@@ -167,6 +167,18 @@ include ("../../inc/nav.php");
                                                 </tr>
                                  </thead>
                                  <tbody>
+                                 <?
+                                    $queryA = "SELECT * FROM DRM_USER";
+                                    $resultA = mysql_query($queryA);
+                                    $i = 0;
+                                    $list = array();
+                                    while($rs=mysql_fetch_array($resultA)) {
+                                        $list[$i] = $rs;
+                                        $i++;
+                                    }
+                                    print_pre($list);
+                                       
+                                 ?>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>양천</td>
@@ -483,26 +495,26 @@ $('#datatable_tabletools').dataTable({
                     "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
 
     "oLanguage": {
-            // "sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
-            "sInfo" : "_START_ ~ _END_ / 전체 : _TOTAL_개",
-            "oPaginate" : {
-                "sNext" : "다음",
-                "sPrevious" : "이전"
-                    }
-            },		
-            
-            "autoWidth" : true,
-            "preDrawCallback" : function() {
-                // Initialize the responsive datatables helper once.
-                if (!responsiveHelper_datatable_tabletools) {
-                    responsiveHelper_datatable_tabletools = new ResponsiveDatatablesHelper($('#datatable_tabletools'), breakpointDefinition);
+        // "sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>',
+        "sInfo" : "_START_ ~ _END_ / 전체 : _TOTAL_개",
+        "oPaginate" : {
+            "sNext" : "다음",
+            "sPrevious" : "이전"
                 }
-            },
-            "rowCallback" : function(nRow) {
-                responsiveHelper_datatable_tabletools.createExpandIcon(nRow);
-            },
-            "drawCallback" : function(oSettings) {
-                responsiveHelper_datatable_tabletools.respond();
+        },		
+        
+        "autoWidth" : true,
+        "preDrawCallback" : function() {
+            // Initialize the responsive datatables helper once.
+            if (!responsiveHelper_datatable_tabletools) {
+                responsiveHelper_datatable_tabletools = new ResponsiveDatatablesHelper($('#datatable_tabletools'), breakpointDefinition);
+            }
+        },
+        "rowCallback" : function(nRow) {
+            responsiveHelper_datatable_tabletools.createExpandIcon(nRow);
+        },
+        "drawCallback" : function(oSettings) {
+            responsiveHelper_datatable_tabletools.respond();
     }
 });
 

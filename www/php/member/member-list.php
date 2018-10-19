@@ -143,7 +143,6 @@ include ("../../inc/nav.php");
     
                            <!-- widget content -->
                            <div class="widget-body no-padding">
-            
                               <table id="datatable_tabletools" class="table table-striped table-bordered table-hover" width="100%">
                                  <thead>
                                     <tr>
@@ -156,248 +155,80 @@ include ("../../inc/nav.php");
                                        <th data-hide="phone,tablet">휴대폰</th>
                                        <th data-hide="phone,tablet">주소</th>
                                        <th data-hide="phone,tablet">가입일</th>                  
-                                                    <th data-hide="phone,tablet">상태</th>
+                                       <th data-hide="phone,tablet">상태</th>
                                        <th data-hide="phone,tablet">수정</th>
-                                                </tr>
+                                       </tr>
                                  </thead>
                                  <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td><span class="label label-red">관리자</a></td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td><span class="label label-gray">&nbsp;&nbsp;일반&nbsp;&nbsp;</a></td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td style="color:red">탈퇴</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td><span class="label label-blue">&nbsp;&nbsp;직원&nbsp;&nbsp;</a></td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td><span class="label label-green">지사장</a></td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>6</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>7</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>8</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>9</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>11</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>12</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>13</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>14</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>15</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>16</td>
-                                                    <td>일반</td>
-                                                    <td>aaa</td>
-                                                    <td>오순자</td>
-                                                    <td>2000.10.04</td>
-                                                    <td>031.5500.3239</td>
-                                                    <td>010.5500.3239</td>
-                                                    <td>서울 구로구 신도림로 87</td>
-                                       <td>2000.10.04</td>
-                                                    <td>가입</td>
-                                                    <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
-                                                </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><span class="label label-red">관리자</a></td>
+                                            <td>aaa</td>
+                                            <td>오순자</td>
+                                            <td>2000.10.04</td>
+                                            <td>031.5500.3239</td>
+                                            <td>010.5500.3239</td>
+                                            <td>서울 구로구 신도림로 87</td>
+                                            <td>2000.10.04</td>
+                                            <td>가입</td>
+                                            <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><span class="label label-gray">&nbsp;&nbsp;일반&nbsp;&nbsp;</a></td>
+                                            <td>aaa</td>
+                                            <td>오순자</td>
+                                            <td>2000.10.04</td>
+                                            <td>031.5500.3239</td>
+                                            <td>010.5500.3239</td>
+                                            <td>서울 구로구 신도림로 87</td>
+                                            <td>2000.10.04</td>
+                                            <td style="color:red">탈퇴</td>
+                                            <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><span class="label label-blue">&nbsp;&nbsp;직원&nbsp;&nbsp;</a></td>
+                                            <td>aaa</td>
+                                            <td>오순자</td>
+                                            <td>2000.10.04</td>
+                                            <td>031.5500.3239</td>
+                                            <td>010.5500.3239</td>
+                                            <td>서울 구로구 신도림로 87</td>
+                                            <td>2000.10.04</td>
+                                            <td>가입</td>
+                                            <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><span class="label label-green">지사장</a></td>
+                                            <td>aaa</td>
+                                            <td>오순자</td>
+                                            <td>2000.10.04</td>
+                                            <td>031.5500.3239</td>
+                                            <td>010.5500.3239</td>
+                                            <td>서울 구로구 신도림로 87</td>
+                                            <td>2000.10.04</td>
+                                            <td>가입</td>
+                                            <td><a class="btn btn-primary btn-xs" href="javascript:void(0);"><span class="memberModiBtn" data-title="회원정보 수정" data-mode="edit" data-code="" data-toggle="modal" data-target="#memberRegModal">수정</span></a></td>
+                                        </tr>
                                  </tbody>
                               </table>
-            
                            </div>
                            <!-- end widget content -->
-            
                         </div>
                         <!-- end widget div -->
-            
                      </div>
                      <!-- end widget -->
-            
-
             </article>
             <!-- WIDGET END -->
-
          </div>
-
          <!-- end row -->
-
          <!-- end row -->
-
       </section>
       <!-- end widget grid -->
-
-
    </div>
    <!-- END MAIN CONTENT -->
-
 </div>
 <!-- END MAIN PANEL -->
 
