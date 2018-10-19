@@ -167,18 +167,6 @@ include ("../../inc/nav.php");
                                                 </tr>
                                  </thead>
                                  <tbody>
-                                 <?
-                                    $queryA = "SELECT * FROM DRM_USER";
-                                    $resultA = mysql_query($queryA);
-                                    $i = 0;
-                                    $list = array();
-                                    while($rs=mysql_fetch_array($resultA)) {
-                                        $list[$i] = $rs;
-                                        $i++;
-                                    }
-                                    print_pre($list);
-                                       
-                                 ?>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>양천</td>
