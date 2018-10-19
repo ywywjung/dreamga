@@ -14,82 +14,62 @@
                         <fieldset>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 지사</label>
-                                <div class="col-md-8 selectContainer">
-                                    <select class="form-control" name="jisa_cd(fk)">
-                                        <option value="sort01">서울지사</option>
-                                        <option value="sort02">....</option>
-                                        <option value="sort03">....</option>
-                                    </select>
+                                <div class="col-md-8">
+                                    <span class="form-control">서울지사</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 서비스</label>
-                                <div class="col-md-8 selectContainer">
-                                    <select class="form-control" name="service">
-                                        <option value="service01">산후조리사</option>
-                                        <option value="service02">베이비시터</option>
-                                        <option value="service03">출장반찬</option>
-                                        <option value="service04">기타</option>
-                                    </select>
+                                <div class="col-md-8">
+                                    <span class="form-control">산후조리사</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 직급</label>
-                                <div class="col-md-8 selectContainer">
-                                    <select class="form-control" name="mnger_jobgrd">
-                                        <option value="service01">드림</option>
-                                        <option value="service02">골드</option>
-                                        <option value="service03">로얄</option>
-                                    </select>
+                                <div class="col-md-8">
+                                    <span class="form-control">드림</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 관리사명</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_name" class="form-control">
-                                    <label class="input"><i class="icon-append fa fa-user "></i></label>
+                                    <span class="form-control">홍길동</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 생년월일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_birth_dt" class="datepicker form-control" id="birthDate" placeholder="생년월일">
-								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
+                                    <span class="form-control">2015.11.27</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">전화번호</label>
                                 <div class="col-md-8">
-                                    <input type="tel" name="mnger_telno" class="form-control">
-                                    <label class="input"><i class="icon-append fa fa-phone"></i></label>
+                                    <span class="form-control">02.3016.0000</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 휴대폰번호</label>
                                 <div class="col-md-8">
-                                    <input type="tel" name="mnger_mobile" class="form-control">
-                                    <label class="input"><i class="icon-append fa fa-mobile"></i></label>
+                                    <span class="form-control">010.3016.0000</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 입사일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_ency_dt" class="datepicker form-control" id="birthDate" placeholder="입사일">
-								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
+                                    <span class="form-control">2015.11.27</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">* 퇴사일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_retire_dt" class="datepicker form-control" id="birthDate" placeholder="퇴사일">
-								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
+                                    <span class="form-control">2015.11.27</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">진급일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_lvl_dt" class="datepicker form-control" id="birthDate" placeholder="생년월일">
-								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
+                                    <span class="form-control">2018-01-01</span>
                                 </div>
                             </div>
                         </fieldset>
@@ -110,56 +90,31 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label">이메일</label>
                                 <div class="col-md-8">
-                                    <section class="col-md-7">
-                                        <input type="text" name="mnger_email01" class="form-control">
-                                        <label class="input"><i class="icon-append fa fa-envelope-o"></i></label>
-                                    </section>
-                                    <section class="col col-md-5">
-                                        <select class="form-control" name="mnger_email02">
-                                            <option value="mail01">naver.com</option>
-                                            <option value="mail02">naver.com</option>
-                                        </select>
-                                    </section>
+                                    <span class="form-control">neomate@neomate.net</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">계좌번호</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_bnkac" class="form-control">
-                                    <label class="input"><i class="icon-append fa fa-list-alt"></i></label>
+                                    <span class="form-control">국민은행 000000-00-000000</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">연회비납부일</label>
                                 <div class="col-md-8">
-                                    <input type="text" name="mnger_party_exps" class="datepicker form-control" id="birthDate">
-								    <label class="input"><i class="icon-append fa fa-calendar"></i></label>
+                                    <span class="form-control">2018-01-01</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">4대보험가입여부</label>
-                                <div class="col-md-8 inline-group">
-                                    <label class="radio">
-                                        <input type="radio" name="mnger_bac_insr" class="radiobox">
-                                        <span>가입</span>
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="mnger_bac_insr" class="radiobox">
-                                        <span>미가입</span>
-                                    </label>
+                                <div class="col-md-8">
+                                    <span class="form-control">가입</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">배상책임보험가입여부</label>
-                                <div class="col-md-8 inline-group">
-                                    <label class="radio">
-                                        <input type="radio" name="mnger_res_insr" class="radiobox">
-                                        <span>가입</span>
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="mnger_res_insr" class="radiobox">
-                                        <span>미가입</span>
-                                    </label>
+                                <div class="col-md-8">
+                                    <span class="form-control">미가입</span>
                                 </div>
                             </div>
                             <div class="form-group">
