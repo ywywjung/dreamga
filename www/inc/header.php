@@ -78,8 +78,6 @@
 				document.write('<script src="<?php echo ASSETS_URL; ?>/js/libs/jquery-ui.min.js"><\/script>');
 			}
 		</script>
-
-
 	</head>
 	<!-- #BODY -->
 	<!-- Possible Classes
