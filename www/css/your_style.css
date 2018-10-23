@@ -77,4 +77,5 @@ label { line-height: 35px; }
 .fileBtn { padding: 6px 12px; }
 
 
-
+/* 예약관리 > 예약정보 : 관리사정보보기,고객정보보기 form */
+.viewInfo { line-height: 30px; padding: 0 10px; box-sizing: border-box; }
