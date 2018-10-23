@@ -94,6 +94,9 @@ include ("../../inc/nav.php");
 								<option value="K001" >퇴사</option>
 							  </select>
                         </div>
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            <i class="glyphicon glyphicon-search"></i> 검색
+                        </button>
                         <div class="form-group" id="div_mach_cd">
                             <i class="fa fa-chevron-right padding-5"></i><span>관리사수 :&nbsp;200명</span>
                         </div>

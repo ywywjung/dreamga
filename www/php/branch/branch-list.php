@@ -76,6 +76,9 @@ include ("../../inc/nav.php");
 								<option value="K001" >미사용</option>
 							  </select>
 						</div>
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            <i class="glyphicon glyphicon-search"></i> 검색
+                        </button>
 						<!-- <div class="smart-form form-group">
 							<label class="input"> <i class="icon-append fa fa-calendar"></i>
 								<input name="startDate" class="datepicker" id="startDate" type="text" placeholder="시작일" data-dateformat="yymmdd" value="20181001">

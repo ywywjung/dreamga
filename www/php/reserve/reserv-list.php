@@ -79,6 +79,9 @@ include ("../../inc/nav.php");
 								<option value="K001" >완료</option>
 							  </select>
                         </div>
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            <i class="glyphicon glyphicon-search"></i> 검색
+                        </button>
                         &nbsp;
                         &nbsp;
                         <!-- 캘린더 -->
@@ -96,7 +99,9 @@ include ("../../inc/nav.php");
 								<input name="endDate" class="datepicker" id="endDate" type="text" placeholder="종료일" data-dateformat="yy-mm-dd" value="2018-10-31">
 							</label>
                         </div>
+                       
                         <br>
+                       
                         <!-- 예약상황 -->
                         <ul class="reservlist_label">
                             <li><span class="label label-gray">&nbsp;&nbsp;접수&nbsp;&nbsp;100건</span></li>

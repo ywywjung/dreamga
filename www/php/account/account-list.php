@@ -84,8 +84,11 @@ include ("../../inc/nav.php");
 								<option value="K001" >베이비시터</option>
 								<option value="K001" >출장반찬</option>
 								<option value="K001" >기타</option>
-							  </select>
+							</select>
                         </div>
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            <i class="glyphicon glyphicon-search"></i> 검색
+                        </button>
                         &nbsp;
                         &nbsp;
                         <!-- 캘린더 -->
