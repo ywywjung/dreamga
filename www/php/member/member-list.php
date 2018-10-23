@@ -32,9 +32,11 @@ include ("../../inc/nav.php");
       //$breadcrumbs["New Crumb"] => "http://url.com"
       $breadcrumbs["회원관리"] = "";
       include("../../inc/ribbon.php");
-
+      $conn = mysqli_connect(
+          'neodev.neomate7.gethompy.com','root','sys!@#$001','cusr_neodev');
+      );
       $sql = "SELECT * FROM DRM_USER";
-      $result = mysqli_query($sql);
+      $result = mysqli_query($conn,$sql);
       $row = mysqli_fetch_array($result);
 
       echo '<h1>'.$row['USER_ID'].'</h1>';
