@@ -151,11 +151,11 @@
                                         <input type="radio" name="radio-inline" class="radiobox">
                                         <span>초산</span>
                                     </label>
-                                    <label class="radio">
+                                    <label class="radio col-md-3">
                                         <input type="radio" name="radio-inline" class="radiobox">
                                         <span>경산</span>
                                     </label>
-                                    <div class="col-md-5">
+                                    <div class="col-md-4">
                                         <input type="text" name="born" class="form-control">
                                     </div>
                                 </div>
