@@ -32,6 +32,13 @@ include ("../../inc/nav.php");
       //$breadcrumbs["New Crumb"] => "http://url.com"
       $breadcrumbs["회원관리"] = "";
       include("../../inc/ribbon.php");
+
+      $sql = "SELECT * FROM DRM_USER";
+      $result = mysqli_query($sql);
+      $row = mysqli_fetch_array($result);
+
+      echo '<h1>'.$row['USER_ID'].'</h1>';
+      return;
     ?>
     
    <!-- MAIN CONTENT -->
@@ -114,7 +121,6 @@ include ("../../inc/nav.php");
                <div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false" data-widget-togglebutton="false">
                   <!-- widget options:
                   usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-
                   data-widget-colorbutton="false"
                   data-widget-editbutton="false"
                   data-widget-togglebutton="false"
@@ -123,14 +129,13 @@ include ("../../inc/nav.php");
                   data-widget-custombutton="false"
                   data-widget-collapsed="true"
                   data-widget-sortable="false"
-
                   -->
                   <header>
                      <span class="widget-icon"> <i class="fa fa-user"></i> </span>
                      <h2>회원정보</h2>
       
                   </header>
-            
+
                         <!-- widget div-->
                         <div>
                                     <!-- widget edit box -->
